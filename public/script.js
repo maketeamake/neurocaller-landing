@@ -1,15 +1,37 @@
+// Scroll Animation Observer
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const animateOnScroll = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      // Add staggered delay for multiple elements
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 100);
+      animateOnScroll.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Initialize scroll animations
+document.querySelectorAll('[data-animate]').forEach(el => {
+  animateOnScroll.observe(el);
+});
+
 // Analytics tracking
 function trackEvent(event, data = {}) {
   fetch('/api/analytics', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ event, data })
-  }).catch(() => {
-    // Silently fail - analytics shouldn't break the page
-  });
+  }).catch(() => {});
 }
 
-// Track page view on load
+// Track page view
 document.addEventListener('DOMContentLoaded', () => {
   trackEvent('page_view', {
     url: window.location.href,
@@ -56,7 +78,7 @@ if (form) {
       const result = await response.json();
 
       if (result.ok) {
-        statusEl.textContent = 'Thanks! I\'ll be in touch soon.';
+        statusEl.textContent = "Thanks! I'll be in touch soon.";
         statusEl.className = 'form-status success';
         form.reset();
         trackEvent('form_success', { name: formData.name });
@@ -73,3 +95,14 @@ if (form) {
     }
   });
 }
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});

@@ -3,24 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroCaller - AI Staff Calling for Restaurants</title>
-  <meta name="description" content="AI calls staff to cover restaurant shifts in under 10 minutes. Looking for co-founder in Amsterdam or Berlin.">
+  <title>NeuroCaller — AI-Powered Staff Calling for Restaurants</title>
+  <meta name="description" content="Cover restaurant shifts in under 10 minutes with AI-powered calling. Looking for a co-founder in Amsterdam or Berlin.">
+  <meta name="theme-color" content="#0a0a0f">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <style>
+    :root {
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+  </style>
 </head>
 <body>
+  <!-- Background Elements -->
+  <div class="bg-grid"></div>
+
   <!-- Hero Section -->
   <section class="hero">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
     <div class="container">
-      <h1>AI calls staff to cover restaurant shifts in under 10 minutes</h1>
-      <p class="subhead">Working POC. Looking for co-founder in Amsterdam or Berlin.</p>
-      <div class="cta-buttons">
-        <a href="tel:+31600000000" class="btn btn-phone" data-track="cta-phone">
-          <span class="btn-icon">📞</span> Call Now
-        </a>
-        <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="cta-whatsapp" target="_blank">
-          <span class="btn-icon">💬</span> WhatsApp
-        </a>
+      <div class="hero-content">
+        <div class="hero-badge animate-in">
+          <span class="hero-badge-dot"></span>
+          Working POC · Ready for pilots
+        </div>
+        <h1 class="animate-in delay-1">
+          AI calls your staff to cover shifts in
+          <span class="gradient-text">under 10 minutes</span>
+        </h1>
+        <p class="hero-subtitle animate-in delay-2">
+          Stop wasting 45 minutes calling employees one by one. Let AI handle it while you run your restaurant.
+        </p>
+        <div class="btn-group animate-in delay-3">
+          <a href="tel:+31600000000" class="btn btn-primary" data-track="hero-call">
+            <span class="btn-icon">📞</span> Let's Talk
+          </a>
+          <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="hero-whatsapp" target="_blank" rel="noopener">
+            <span class="btn-icon">💬</span> WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -28,11 +53,12 @@
   <!-- Problem Section -->
   <section class="problem">
     <div class="container">
-      <h2>The Problem</h2>
-      <div class="problem-content">
-        <p class="problem-stat">45 minutes</p>
-        <p>That's how long managers spend calling staff one by one when someone calls in sick.</p>
-        <p>WhatsApp messages get ignored. Shifts go uncovered. Revenue is lost.</p>
+      <div class="problem-card" data-animate>
+        <div class="problem-stat">45</div>
+        <div class="problem-stat-label">minutes wasted</div>
+        <p class="problem-desc">
+          That's how long restaurant managers spend calling staff when someone calls in sick. WhatsApp messages get ignored. Shifts go uncovered. Revenue is lost.
+        </p>
       </div>
     </div>
   </section>
@@ -40,27 +66,32 @@
   <!-- Solution Section -->
   <section class="solution">
     <div class="container">
-      <h2>The Solution</h2>
-      <div class="steps">
-        <div class="step">
+      <div class="section-header" data-animate>
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">From panic to covered in 3 steps</h2>
+        <p class="section-desc">Simple, fast, and fully automated</p>
+      </div>
+      <div class="steps-container">
+        <div class="step-card" data-animate>
           <div class="step-number">1</div>
-          <div class="step-icon">📱</div>
+          <span class="step-icon">📱</span>
           <h3>Trigger</h3>
-          <p>Manager sends shift request in 30 seconds</p>
+          <p>Manager sends a shift request through the app</p>
+          <span class="step-time">30 seconds</span>
         </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
+        <div class="step-card" data-animate>
           <div class="step-number">2</div>
-          <div class="step-icon">🤖</div>
+          <span class="step-icon">🤖</span>
           <h3>AI Calls</h3>
-          <p>System calls available staff automatically</p>
+          <p>System automatically calls available staff members</p>
+          <span class="step-time">5-10 minutes</span>
         </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
+        <div class="step-card" data-animate>
           <div class="step-number">3</div>
-          <div class="step-icon">✅</div>
+          <span class="step-icon">✅</span>
           <h3>Confirmed</h3>
-          <p>Shift covered in 5-10 minutes</p>
+          <p>Shift is covered, manager gets notified instantly</p>
+          <span class="step-time">Done</span>
         </div>
       </div>
     </div>
@@ -69,16 +100,22 @@
   <!-- Demo Section -->
   <section class="demo">
     <div class="container">
-      <h2>See It In Action</h2>
-      <div class="video-wrapper">
-        <!-- Replace VIDEO_ID with actual YouTube/Loom video ID -->
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="NeuroCaller Demo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="section-header" data-animate>
+        <span class="section-label">See It In Action</span>
+        <h2 class="section-title">Watch how it works</h2>
+      </div>
+      <div class="video-container" data-animate>
+        <div class="video-wrapper">
+          <!-- Replace VIDEO_ID with your actual YouTube/Loom video ID -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="NeuroCaller Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -86,65 +123,86 @@
   <!-- Co-Founder Section -->
   <section class="cofounder">
     <div class="container">
-      <h2>Looking for a Co-Founder</h2>
-      <div class="cofounder-details">
-        <div class="detail-card">
-          <h3>📍 Location</h3>
-          <p>Amsterdam or Berlin</p>
+      <div class="section-header" data-animate>
+        <span class="section-label">Partnership</span>
+        <h2 class="section-title">Looking for a co-founder</h2>
+        <p class="section-desc">Join me to bring AI-powered shift management to restaurants across Europe</p>
+      </div>
+      <div class="cofounder-grid">
+        <div class="cofounder-card" data-animate>
+          <div class="cofounder-icon">📍</div>
+          <div>
+            <h3>Location</h3>
+            <p>Amsterdam or Berlin based</p>
+          </div>
         </div>
-        <div class="detail-card">
-          <h3>🎯 Focus</h3>
-          <p>Sales, outbound, pilots, early revenue</p>
+        <div class="cofounder-card" data-animate>
+          <div class="cofounder-icon">🎯</div>
+          <div>
+            <h3>Focus</h3>
+            <p>Sales, outbound, pilots, early revenue</p>
+          </div>
         </div>
-        <div class="detail-card">
-          <h3>💼 Skills</h3>
-          <p>B2B sales, hospitality/HR experience preferred</p>
+        <div class="cofounder-card" data-animate>
+          <div class="cofounder-icon">💼</div>
+          <div>
+            <h3>Background</h3>
+            <p>B2B sales, hospitality or HR experience</p>
+          </div>
         </div>
-        <div class="detail-card">
-          <h3>⚖️ Equity</h3>
-          <p>50/50 split</p>
+        <div class="cofounder-card" data-animate>
+          <div class="cofounder-icon">⚖️</div>
+          <div>
+            <h3>Equity</h3>
+            <p>50/50 split — equal partners</p>
+          </div>
         </div>
       </div>
-      <p class="status">Status: Working POC, ready for pilots</p>
+      <div class="section-header" style="margin-top: 2rem; margin-bottom: 0;">
+        <div class="status-badge" data-animate>
+          <span class="hero-badge-dot"></span>
+          Working POC · Ready for pilots
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact/CTA Section -->
-  <section class="contact">
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
     <div class="container">
-      <h2>Let's Talk</h2>
       <div class="contact-grid">
-        <div class="contact-direct">
-          <h3>Reach out directly</h3>
-          <div class="cta-buttons vertical">
-            <a href="tel:+31600000000" class="btn btn-phone" data-track="contact-phone">
+        <div class="contact-info" data-animate>
+          <h3>Let's build this together</h3>
+          <p>Whether you're interested in partnering or just want to learn more, I'd love to hear from you.</p>
+          <div class="contact-buttons">
+            <a href="tel:+31600000000" class="btn btn-primary" data-track="contact-call">
               <span class="btn-icon">📞</span> Call Now
             </a>
-            <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="contact-whatsapp" target="_blank">
+            <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="contact-whatsapp" target="_blank" rel="noopener">
               <span class="btn-icon">💬</span> WhatsApp
             </a>
           </div>
         </div>
-        <div class="contact-form">
+        <div class="contact-form-wrapper" data-animate>
           <h3>Or leave your details</h3>
           <form id="lead-form">
             <div class="form-group">
-              <label for="name">Name *</label>
+              <label for="name">Name</label>
               <input type="text" id="name" name="name" required placeholder="Your name">
             </div>
             <div class="form-group">
-              <label for="phone">Phone *</label>
+              <label for="phone">Phone</label>
               <input type="tel" id="phone" name="phone" required placeholder="+31 6 1234 5678">
             </div>
             <div class="form-group">
               <label for="city">City</label>
-              <input type="text" id="city" name="city" placeholder="Amsterdam, Berlin, etc.">
+              <input type="text" id="city" name="city" placeholder="Amsterdam, Berlin...">
             </div>
             <div class="form-group">
-              <label for="note">Note</label>
+              <label for="note">Message</label>
               <textarea id="note" name="note" rows="3" placeholder="Tell me about yourself..."></textarea>
             </div>
-            <button type="submit" class="btn btn-submit" data-track="form-submit">
+            <button type="submit" class="btn-submit" data-track="form-submit">
               Send Message
             </button>
             <p class="form-status" id="form-status"></p>
@@ -157,11 +215,12 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>NeuroCaller &copy; 2025</p>
-      <p class="footer-contact">
+      <div class="footer-logo">NeuroCaller</div>
+      <div class="footer-links">
         <a href="mailto:hello@neurocaller.com">hello@neurocaller.com</a>
-      </p>
-      <p class="privacy">Your information is kept private and never shared.</p>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 NeuroCaller. Your data is kept private.</p>
     </div>
   </footer>
 
