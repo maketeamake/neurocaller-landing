@@ -4,72 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NeuroCaller — AI Workforce for Hospitality</title>
-  <meta name="description" content="We build flexible worker pools for restaurants and hotels using AI. Amsterdam, Berlin, Stockholm.">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="AI-powered candidate acquisition for restaurants and hotels. Build your flexible workforce pool before you need it. Amsterdam, Berlin, Stockholm.">
+  <meta name="theme-color" content="#0a0a0f">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <!-- Nav -->
-  <nav class="nav">
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="/" class="logo">NeuroCaller</a>
-      <a href="#contact" class="nav-cta">Get access</a>
+      <a href="#contact" class="nav-cta">Get early access</a>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-bg"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
     <div class="hero-content">
-      <p class="hero-label">Amsterdam / Berlin / Stockholm</p>
-      <h1>
-        <span class="hero-line">We find hospitality</span>
-        <span class="hero-line accent">workers for you</span>
-      </h1>
-      <p class="hero-sub">
-        AI-powered candidate acquisition for restaurants and hotels.
-        Build your flexible workforce pool before you need it.
-      </p>
-      <div class="hero-actions">
-        <a href="#how" class="btn-primary">How it works</a>
-        <a href="#contact" class="btn-ghost">Request pilot</a>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Now accepting pilots in Amsterdam
       </div>
-    </div>
-    <div class="hero-stat">
-      <span class="stat-num">123</span>
-      <span class="stat-text">vacancies per 100<br>unemployed in NL</span>
+
+      <h1>
+        AI finds hospitality<br>
+        <span class="gradient-text">workers for you</span>
+      </h1>
+
+      <p class="hero-sub">
+        Build your flexible candidate pool before you need it.
+        When shifts need coverage, AI calls available workers in under 10 minutes.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#how" class="btn-primary">
+          <span>See how it works</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn-secondary">Request pilot</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">123</div>
+          <div class="hero-stat-label">Vacancies per 100 unemployed in NL</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">30K+</div>
+          <div class="hero-stat-label">Open positions in Dutch horeca</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">35%</div>
+          <div class="hero-stat-label">Annual staff turnover</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Problem -->
-  <section class="problem">
+  <!-- Problem Section -->
+  <section class="problem" id="problem">
     <div class="container">
       <div class="problem-grid">
-        <div class="problem-left">
-          <p class="label">The insight</p>
-          <h2>You can't cover shifts if you don't have workers</h2>
+        <div class="problem-visual" data-animate>
+          <div class="stat-card">
+            <div class="stat-card-value">45</div>
+            <div class="stat-card-label">Minutes average time to cover a shift manually</div>
+            <div class="stat-card-context">
+              Calling staff one by one. WhatsApp messages ignored. Revenue lost.
+            </div>
+          </div>
         </div>
-        <div class="problem-right">
-          <p class="large-text">
-            Staff shortage is the real problem. Shift coverage is just a symptom.
+
+        <div class="problem-content" data-animate>
+          <h2>Staff shortage is the real problem. Shift coverage is just a symptom.</h2>
+          <p>
+            Restaurants don't struggle with scheduling software — they struggle finding people to schedule.
             We realized: build the candidate pool first, activate it when needed.
           </p>
-          <div class="stats-row">
-            <div class="stat-item">
-              <span class="stat-value">30K+</span>
-              <span class="stat-label">open positions in Dutch horeca</span>
+          <div class="problem-stats">
+            <div class="problem-stat">
+              <div class="problem-stat-value">8.6M</div>
+              <div class="problem-stat-label">Hospitality workers in EU</div>
             </div>
-            <div class="stat-item">
-              <span class="stat-value">35%</span>
-              <span class="stat-label">annual staff turnover</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-value">8.6M</span>
-              <span class="stat-label">hospitality workers in EU</span>
+            <div class="problem-stat">
+              <div class="problem-stat-value">1,861</div>
+              <div class="problem-stat-label">Restaurants in Amsterdam</div>
             </div>
           </div>
         </div>
@@ -77,167 +103,251 @@
     </div>
   </section>
 
-  <!-- How -->
-  <section class="how" id="how">
+  <!-- How It Works - Bento Grid -->
+  <section class="bento" id="how">
     <div class="container">
-      <p class="label">How it works</p>
-      <h2 class="how-title">Three phases</h2>
+      <div class="section-header" data-animate>
+        <span class="section-label">How it works</span>
+        <h2 class="section-title">Three phases to solve hospitality staffing</h2>
+        <p class="section-desc">We don't just help you fill shifts. We build the workforce pipeline that makes staffing problems disappear.</p>
+      </div>
 
-      <div class="phases">
-        <article class="phase">
-          <div class="phase-num">01</div>
+      <div class="bento-grid" data-animate-stagger>
+        <!-- Card 1: Build -->
+        <div class="bento-card">
+          <span class="bento-num">01</span>
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
           <h3>Build</h3>
-          <p>AI reaches out to job boards, student networks, referrals. We screen and qualify candidates in your area.</p>
-          <ul class="phase-list">
-            <li>Job platforms integration</li>
-            <li>University partnerships</li>
-            <li>Referral automation</li>
+          <p>AI sources candidates from job boards, student networks, and referrals. We screen and qualify workers in your area.</p>
+          <ul class="bento-list">
+            <li>Job platforms</li>
+            <li>Universities</li>
+            <li>Referrals</li>
           </ul>
-        </article>
+        </div>
 
-        <article class="phase">
-          <div class="phase-num">02</div>
+        <!-- Card 2: Activate (Featured) -->
+        <div class="bento-card featured">
+          <span class="bento-num">02</span>
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
           <h3>Activate</h3>
-          <p>When you need coverage, AI calls available workers. Natural voice, under 2 seconds latency. 10 minutes instead of 45.</p>
-          <ul class="phase-list">
+          <p>When you need coverage, AI calls available workers. Natural voice conversation, under 2 seconds latency. 10 minutes instead of 45.</p>
+
+          <div class="bento-mockup">
+            <div class="mockup-header">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-line"><span class="muted">[09:15]</span> <span class="accent">Shift request:</span> Saturday 18:00-23:00</div>
+              <div class="mockup-line"><span class="muted">[09:15]</span> Calling 12 available candidates...</div>
+              <div class="mockup-line"><span class="muted">[09:18]</span> <span class="success">Maria S. confirmed</span></div>
+              <div class="mockup-line"><span class="muted">[09:18]</span> <span class="success">Shift covered in 3 minutes</span></div>
+            </div>
+          </div>
+
+          <ul class="bento-list">
             <li>Voice AI calling</li>
             <li>Smart matching</li>
             <li>WhatsApp triggers</li>
           </ul>
-        </article>
+        </div>
 
-        <article class="phase featured">
-          <div class="phase-num">03</div>
+        <!-- Card 3: Network -->
+        <div class="bento-card">
+          <span class="bento-num">03</span>
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
           <h3>Network</h3>
-          <p>Shared candidate pool across restaurants. You contribute staff, you get access to others. Network effect = the moat.</p>
-          <ul class="phase-list">
-            <li>500+ shared candidates</li>
-            <li>Cross-restaurant access</li>
-            <li>More shifts for workers</li>
+          <p>Shared candidate pool across restaurants. You contribute staff, you get access to others. Network effect is the moat.</p>
+          <ul class="bento-list">
+            <li>500+ candidates</li>
+            <li>Cross-restaurant</li>
+            <li>More shifts</li>
           </ul>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Markets -->
-  <section class="markets">
+  <!-- Markets Section -->
+  <section class="markets" id="markets">
     <div class="container">
-      <div class="markets-header">
-        <p class="label">Markets</p>
-        <h2>Starting where shortage hurts most</h2>
+      <div class="section-header" data-animate>
+        <span class="section-label">Markets</span>
+        <h2 class="section-title">Starting where shortage hurts most</h2>
       </div>
-      <div class="markets-grid">
+
+      <div class="markets-grid" data-animate-stagger>
         <div class="market-card active">
           <span class="market-tag">Now</span>
           <h3>Amsterdam</h3>
-          <p>1,861 restaurants. Worst vacancy rate in Europe. English-first market.</p>
+          <p>1,861 restaurants. Worst vacancy rate in Europe. English-first market. Perfect for initial pilots.</p>
         </div>
         <div class="market-card">
-          <span class="market-tag">Next</span>
+          <span class="market-tag">Q3 2026</span>
           <h3>Berlin</h3>
-          <p>5,000+ restaurants. 44% foreign workforce. Largest EU market.</p>
+          <p>5,000+ restaurants. 44% foreign workforce. Largest EU market. High demand for flexible staff.</p>
         </div>
         <div class="market-card">
           <span class="market-tag">2027</span>
           <h3>Stockholm</h3>
-          <p>4,000+ restaurants. High tech adoption. Perfect English.</p>
+          <p>4,000+ restaurants. High tech adoption. Perfect English. Strong hospitality sector growth.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why -->
-  <section class="why">
+  <!-- Why Section -->
+  <section class="why" id="why">
     <div class="container">
-      <div class="why-grid">
-        <div class="why-item">
-          <h3>EU-first</h3>
-          <p>GDPR compliant. EU-hosted infrastructure. Vapi has no EU servers — we do.</p>
+      <div class="section-header" data-animate>
+        <span class="section-label">Why us</span>
+        <h2 class="section-title">Built different</h2>
+      </div>
+
+      <div class="why-grid" data-animate-stagger>
+        <div class="why-card">
+          <h3>EU-first infrastructure</h3>
+          <p>GDPR compliant from day one. EU-hosted servers. Vapi has no EU presence — we do. Your data stays in Europe.</p>
         </div>
-        <div class="why-item">
-          <h3>Voice AI ready</h3>
-          <p>Natural conversation quality. Sub-2s latency. Handles complex responses.</p>
+        <div class="why-card">
+          <h3>Voice AI that works</h3>
+          <p>Natural conversation quality. Sub-2 second latency. Handles complex responses and objections. Not a robocall.</p>
         </div>
-        <div class="why-item">
-          <h3>No competition</h3>
-          <p>7shifts, Planday, Deputy — none have AI calling. We're building first.</p>
+        <div class="why-card">
+          <h3>No real competition</h3>
+          <p>7shifts, Planday, Deputy — none have AI calling. Toast and Square focus on POS. We're building the future first.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="pricing">
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
     <div class="container">
-      <p class="label">Pricing</p>
-      <h2>Simple model</h2>
-      <div class="pricing-table">
-        <div class="price-row">
-          <span class="price-tier">Starter</span>
-          <span class="price-amount">€99/mo</span>
-          <span class="price-desc">Single location, own staff only</span>
+      <div class="section-header" data-animate>
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">Simple, transparent model</h2>
+      </div>
+
+      <div class="pricing-grid" data-animate-stagger>
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-amount">€99</div>
+          <div class="price-period">per month</div>
+          <p class="price-desc">Single location, your own staff pool only</p>
+          <a href="#contact" class="price-btn">Get started</a>
         </div>
-        <div class="price-row highlight">
-          <span class="price-tier">Pro</span>
-          <span class="price-amount">€199/mo</span>
-          <span class="price-desc">Shared pool access + analytics</span>
+        <div class="price-card featured">
+          <div class="price-tier">Pro</div>
+          <div class="price-amount">€199</div>
+          <div class="price-period">per month</div>
+          <p class="price-desc">Shared pool access + analytics dashboard</p>
+          <a href="#contact" class="price-btn">Get started</a>
         </div>
-        <div class="price-row">
-          <span class="price-tier">Enterprise</span>
-          <span class="price-amount">Custom</span>
-          <span class="price-desc">Chains, staffing agencies, API</span>
+        <div class="price-card">
+          <div class="price-tier">Enterprise</div>
+          <div class="price-amount">Custom</div>
+          <div class="price-period">contact us</div>
+          <p class="price-desc">Chains, staffing agencies, API access</p>
+          <a href="#contact" class="price-btn">Contact sales</a>
         </div>
       </div>
-      <p class="pricing-alt">Or: €5 per covered shift. Pay only for results.</p>
+
+      <p class="pricing-note">Or: €5 per covered shift. Pay only when it works.</p>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="contact-split">
-        <div class="contact-left">
-          <p class="label">Pilot program</p>
+      <div class="contact-grid">
+        <div class="contact-content" data-animate>
           <h2>Looking for 5 Amsterdam restaurants</h2>
-          <p class="contact-desc">Free 2-month pilot. We need restaurants with 20-50 staff who struggle with finding coverage.</p>
+          <p>Free 2-month pilot. We need restaurants with 20-50 staff who struggle with finding coverage.</p>
 
-          <div class="looking-list">
+          <div class="looking-for">
             <div class="looking-item">
-              <span class="looking-title">Restaurant owners</span>
-              <span class="looking-sub">20-50 staff, Amsterdam or Berlin</span>
+              <div class="looking-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <div class="looking-text">
+                <h4>Restaurant owners</h4>
+                <p>20-50 staff, Amsterdam or Berlin</p>
+              </div>
             </div>
             <div class="looking-item">
-              <span class="looking-title">Industry partners</span>
-              <span class="looking-sub">Hospitality contacts, local networks</span>
+              <div class="looking-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="looking-text">
+                <h4>Industry partners</h4>
+                <p>Hospitality contacts, local networks</p>
+              </div>
             </div>
             <div class="looking-item">
-              <span class="looking-title">Co-founders</span>
-              <span class="looking-sub">Sales/ops background in hospitality</span>
+              <div class="looking-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <div class="looking-text">
+                <h4>Co-founders</h4>
+                <p>Sales/ops background in hospitality</p>
+              </div>
             </div>
           </div>
 
-          <p class="contact-email">hello@neurocaller.com</p>
+          <p class="contact-email">
+            <a href="mailto:hello@neurocaller.com">hello@neurocaller.com</a>
+          </p>
         </div>
-        <div class="contact-right">
-          <form id="lead-form" class="form">
+
+        <div class="contact-form" data-animate>
+          <form id="lead-form">
             <div class="form-field">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="form-field">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
             </div>
             <div class="form-field">
               <label for="company">Restaurant / Company</label>
-              <input type="text" id="company" name="company">
+              <input type="text" id="company" name="company" placeholder="Company name">
             </div>
             <div class="form-field">
               <label for="note">Message</label>
-              <textarea id="note" name="note" rows="3"></textarea>
+              <textarea id="note" name="note" rows="3" placeholder="Tell us about your staffing challenges..."></textarea>
             </div>
-            <button type="submit" class="form-submit">Request access</button>
+            <button type="submit" class="form-submit">Request pilot access</button>
             <p class="form-status" id="form-status"></p>
           </form>
         </div>
@@ -250,8 +360,11 @@
     <div class="container">
       <div class="footer-inner">
         <span class="footer-logo">NeuroCaller</span>
-        <span class="footer-copy">Dmitry Ivanov / Montenegro / 2026</span>
-        <span class="footer-legal">EU-first, GDPR compliant</span>
+        <div class="footer-links">
+          <a href="mailto:hello@neurocaller.com">Contact</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <span class="footer-copy">EU-first. GDPR compliant. 2026</span>
       </div>
     </div>
   </footer>
