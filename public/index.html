@@ -3,330 +3,241 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroCaller — AI-Powered Hospitality Recruitment</title>
-  <meta name="description" content="Build your flexible workforce pool with AI. We find hospitality workers so you don't have to. Amsterdam · Berlin · Stockholm">
-  <meta name="theme-color" content="#09090b">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="NeuroCaller — AI-Powered Hospitality Recruitment">
-  <meta property="og:description" content="Build your flexible workforce pool with AI. We find hospitality workers so you don't have to.">
-  <meta property="og:type" content="website">
-
+  <title>NeuroCaller — AI Workforce for Hospitality</title>
+  <meta name="description" content="We build flexible worker pools for restaurants and hotels using AI. Amsterdam, Berlin, Stockholm.">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">NeuroCaller</a>
+      <a href="#contact" class="nav-cta">Get access</a>
+    </div>
+  </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge animate-in">
-          <span class="hero-badge-dot"></span>
-          Amsterdam · Berlin · Stockholm
-        </div>
-        <h1 class="animate-in delay-1">
-          Build your hospitality<br>
-          <span class="gradient-text">workforce with AI</span>
-        </h1>
-        <p class="hero-subtitle animate-in delay-2">
-          Can't find staff? We build and activate flexible worker pools for restaurants and hotels using AI-powered outreach.
-        </p>
-        <div class="btn-group animate-in delay-3">
-          <a href="#how-it-works" class="btn btn-primary" data-track="hero-how">
-            See How It Works
-          </a>
-          <a href="#contact" class="btn btn-secondary" data-track="hero-contact">
-            Get Early Access
-          </a>
-        </div>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-label">Amsterdam / Berlin / Stockholm</p>
+      <h1>
+        <span class="hero-line">We find hospitality</span>
+        <span class="hero-line accent">workers for you</span>
+      </h1>
+      <p class="hero-sub">
+        AI-powered candidate acquisition for restaurants and hotels.
+        Build your flexible workforce pool before you need it.
+      </p>
+      <div class="hero-actions">
+        <a href="#how" class="btn-primary">How it works</a>
+        <a href="#contact" class="btn-ghost">Request pilot</a>
       </div>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-num">123</span>
+      <span class="stat-text">vacancies per 100<br>unemployed in NL</span>
     </div>
   </section>
 
-  <!-- Problem Section -->
+  <!-- Problem -->
   <section class="problem">
     <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">The Real Problem</span>
-        <h2 class="section-title">Before you can cover shifts, you need workers</h2>
-        <p class="section-desc">Staff shortage is the #1 operational barrier for European hospitality</p>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-card" data-animate>
-          <div class="stat-number">123</div>
-          <div class="stat-label">vacancies per 100 unemployed</div>
-          <p>Netherlands hospitality — worst shortage in Europe</p>
+      <div class="problem-grid">
+        <div class="problem-left">
+          <p class="label">The insight</p>
+          <h2>You can't cover shifts if you don't have workers</h2>
         </div>
-        <div class="stat-card" data-animate>
-          <div class="stat-number">30K+</div>
-          <div class="stat-label">open positions</div>
-          <p>In Dutch horeca sector alone (Q1 2025)</p>
-        </div>
-        <div class="stat-card" data-animate>
-          <div class="stat-number">35%</div>
-          <div class="stat-label">annual turnover</div>
-          <p>Industry average — constant hiring needed</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Insight Section -->
-  <section class="insight">
-    <div class="container">
-      <div class="insight-card" data-animate>
-        <div class="insight-quote">"</div>
-        <p class="insight-text">
-          First I had the idea to help find shifts for waiters, then I realized — <strong>we need to find the waiters themselves first.</strong>
-        </p>
-        <p class="insight-subtext">
-          Shift coverage is a symptom. The root cause is that restaurants don't have enough flexible workers. The candidate database IS the product.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works Section -->
-  <section class="solution" id="how-it-works">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title">AI-powered candidate acquisition</h2>
-        <p class="section-desc">We build your worker pool, then activate it when you need coverage</p>
-      </div>
-      <div class="phases-grid">
-        <div class="phase-card" data-animate>
-          <div class="phase-number">Phase 1</div>
-          <div class="phase-icon">🔍</div>
-          <h3>Build the Pool</h3>
-          <p>AI reaches out to job boards, student networks, and referrals to find hospitality workers in your area.</p>
-          <ul class="phase-features">
-            <li>Horecabaan.nl, university job boards</li>
-            <li>Referral programs ("bring a friend")</li>
-            <li>Partner restaurant staff sharing</li>
-          </ul>
-        </div>
-        <div class="phase-card" data-animate>
-          <div class="phase-number">Phase 2</div>
-          <div class="phase-icon">📞</div>
-          <h3>Activate Instantly</h3>
-          <p>When you need coverage, AI calls available workers from the pool. 10 minutes instead of 45.</p>
-          <ul class="phase-features">
-            <li>Natural voice AI (&lt;1.5s latency)</li>
-            <li>Smart matching by skills, location</li>
-            <li>WhatsApp trigger for managers</li>
-          </ul>
-        </div>
-        <div class="phase-card featured" data-animate>
-          <div class="phase-number">The Moat</div>
-          <div class="phase-icon">🌐</div>
-          <h3>Shared Network</h3>
-          <p>Every restaurant contributes to and benefits from a shared candidate pool. Network effect = your competitive advantage.</p>
-          <ul class="phase-features">
-            <li>500+ candidates in shared pool</li>
-            <li>Small restaurants get access to talent</li>
-            <li>Workers get more shift opportunities</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Demo Section -->
-  <section class="demo" id="demo">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">See It In Action</span>
-        <h2 class="section-title">Watch the AI call demo</h2>
-        <p class="section-desc">Real conversation — natural voice, handles complex responses</p>
-      </div>
-      <div class="video-container" data-animate>
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="NeuroCaller Demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Now Section -->
-  <section class="why-now">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">Why Now</span>
-        <h2 class="section-title">Perfect timing for this solution</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card" data-animate>
-          <div class="why-icon">🇪🇺</div>
-          <h3>EU-First</h3>
-          <p>GDPR compliant, EU-hosted infrastructure. Vapi has NO EU servers — we do.</p>
-        </div>
-        <div class="why-card" data-animate>
-          <div class="why-icon">🎙️</div>
-          <h3>AI Voice Ready</h3>
-          <p>Natural conversation quality finally good enough. Sub-1.5 second latency.</p>
-        </div>
-        <div class="why-card" data-animate>
-          <div class="why-icon">🎯</div>
-          <h3>No Competition</h3>
-          <p>7shifts, Planday, Deputy — none have AI calling. We're first.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Markets Section -->
-  <section class="markets">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">Target Markets</span>
-        <h2 class="section-title">Starting where shortage is worst</h2>
-      </div>
-      <div class="markets-grid">
-        <div class="market-card primary" data-animate>
-          <div class="market-flag">🇳🇱</div>
-          <h3>Amsterdam</h3>
-          <p class="market-stat">1,861 restaurants · 123/100 vacancy rate</p>
-          <span class="market-badge">Primary Market</span>
-        </div>
-        <div class="market-card" data-animate>
-          <div class="market-flag">🇩🇪</div>
-          <h3>Berlin</h3>
-          <p class="market-stat">5,000+ restaurants · 44% foreign workforce</p>
-          <span class="market-badge secondary">Secondary</span>
-        </div>
-        <div class="market-card" data-animate>
-          <div class="market-flag">🇸🇪</div>
-          <h3>Stockholm</h3>
-          <p class="market-stat">4,000+ restaurants · High English proficiency</p>
-          <span class="market-badge secondary">Future</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="pricing">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">Business Model</span>
-        <h2 class="section-title">Simple, transparent pricing</h2>
-      </div>
-      <div class="pricing-grid">
-        <div class="pricing-card" data-animate>
-          <div class="pricing-tier">Starter</div>
-          <div class="pricing-price">€99<span>/mo</span></div>
-          <p class="pricing-desc">Single location, &lt;20 staff</p>
-          <ul class="pricing-features">
-            <li>50 AI calls/month</li>
-            <li>Own staff pool only</li>
-            <li>WhatsApp trigger</li>
-          </ul>
-        </div>
-        <div class="pricing-card featured" data-animate>
-          <div class="pricing-badge">Recommended</div>
-          <div class="pricing-tier">Pro</div>
-          <div class="pricing-price">€199<span>/mo</span></div>
-          <p class="pricing-desc">20-50 staff + shared pool</p>
-          <ul class="pricing-features">
-            <li>200 AI calls/month</li>
-            <li>Shared candidate pool access</li>
-            <li>Dashboard + analytics</li>
-          </ul>
-        </div>
-        <div class="pricing-card" data-animate>
-          <div class="pricing-tier">Enterprise</div>
-          <div class="pricing-price">Custom</div>
-          <p class="pricing-desc">Chains, staffing agencies</p>
-          <ul class="pricing-features">
-            <li>Unlimited calls</li>
-            <li>API integration</li>
-            <li>Priority support + SLA</li>
-          </ul>
-        </div>
-      </div>
-      <p class="pricing-note" data-animate>
-        Alternative: €5 per successfully covered shift (pay-per-success model)
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header" data-animate>
-        <span class="section-label">Get Started</span>
-        <h2 class="section-title">Join the pilot program</h2>
-        <p class="section-desc">Looking for 5 restaurants in Amsterdam to test free for 2 months</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info" data-animate>
-          <h3>We're looking for</h3>
-          <ul class="looking-for">
-            <li>
-              <span class="looking-icon">🍽️</span>
-              <div>
-                <strong>Restaurant owners/managers</strong>
-                <p>20-50 staff, Amsterdam or Berlin</p>
-              </div>
-            </li>
-            <li>
-              <span class="looking-icon">🤝</span>
-              <div>
-                <strong>Industry partners</strong>
-                <p>Hospitality contacts, local networks</p>
-              </div>
-            </li>
-            <li>
-              <span class="looking-icon">🚀</span>
-              <div>
-                <strong>Co-founders</strong>
-                <p>Sales/ops experience in hospitality</p>
-              </div>
-            </li>
-          </ul>
-          <div class="contact-links">
-            <a href="mailto:hello@neurocaller.com" class="contact-link">
-              ✉️ hello@neurocaller.com
-            </a>
+        <div class="problem-right">
+          <p class="large-text">
+            Staff shortage is the real problem. Shift coverage is just a symptom.
+            We realized: build the candidate pool first, activate it when needed.
+          </p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-value">30K+</span>
+              <span class="stat-label">open positions in Dutch horeca</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">35%</span>
+              <span class="stat-label">annual staff turnover</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">8.6M</span>
+              <span class="stat-label">hospitality workers in EU</span>
+            </div>
           </div>
         </div>
-        <div class="contact-form-wrapper" data-animate>
-          <h3>Request early access</h3>
-          <form id="lead-form">
-            <div class="form-group">
+      </div>
+    </div>
+  </section>
+
+  <!-- How -->
+  <section class="how" id="how">
+    <div class="container">
+      <p class="label">How it works</p>
+      <h2 class="how-title">Three phases</h2>
+
+      <div class="phases">
+        <article class="phase">
+          <div class="phase-num">01</div>
+          <h3>Build</h3>
+          <p>AI reaches out to job boards, student networks, referrals. We screen and qualify candidates in your area.</p>
+          <ul class="phase-list">
+            <li>Job platforms integration</li>
+            <li>University partnerships</li>
+            <li>Referral automation</li>
+          </ul>
+        </article>
+
+        <article class="phase">
+          <div class="phase-num">02</div>
+          <h3>Activate</h3>
+          <p>When you need coverage, AI calls available workers. Natural voice, under 2 seconds latency. 10 minutes instead of 45.</p>
+          <ul class="phase-list">
+            <li>Voice AI calling</li>
+            <li>Smart matching</li>
+            <li>WhatsApp triggers</li>
+          </ul>
+        </article>
+
+        <article class="phase featured">
+          <div class="phase-num">03</div>
+          <h3>Network</h3>
+          <p>Shared candidate pool across restaurants. You contribute staff, you get access to others. Network effect = the moat.</p>
+          <ul class="phase-list">
+            <li>500+ shared candidates</li>
+            <li>Cross-restaurant access</li>
+            <li>More shifts for workers</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Markets -->
+  <section class="markets">
+    <div class="container">
+      <div class="markets-header">
+        <p class="label">Markets</p>
+        <h2>Starting where shortage hurts most</h2>
+      </div>
+      <div class="markets-grid">
+        <div class="market-card active">
+          <span class="market-tag">Now</span>
+          <h3>Amsterdam</h3>
+          <p>1,861 restaurants. Worst vacancy rate in Europe. English-first market.</p>
+        </div>
+        <div class="market-card">
+          <span class="market-tag">Next</span>
+          <h3>Berlin</h3>
+          <p>5,000+ restaurants. 44% foreign workforce. Largest EU market.</p>
+        </div>
+        <div class="market-card">
+          <span class="market-tag">2027</span>
+          <h3>Stockholm</h3>
+          <p>4,000+ restaurants. High tech adoption. Perfect English.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>EU-first</h3>
+          <p>GDPR compliant. EU-hosted infrastructure. Vapi has no EU servers — we do.</p>
+        </div>
+        <div class="why-item">
+          <h3>Voice AI ready</h3>
+          <p>Natural conversation quality. Sub-2s latency. Handles complex responses.</p>
+        </div>
+        <div class="why-item">
+          <h3>No competition</h3>
+          <p>7shifts, Planday, Deputy — none have AI calling. We're building first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing">
+    <div class="container">
+      <p class="label">Pricing</p>
+      <h2>Simple model</h2>
+      <div class="pricing-table">
+        <div class="price-row">
+          <span class="price-tier">Starter</span>
+          <span class="price-amount">€99/mo</span>
+          <span class="price-desc">Single location, own staff only</span>
+        </div>
+        <div class="price-row highlight">
+          <span class="price-tier">Pro</span>
+          <span class="price-amount">€199/mo</span>
+          <span class="price-desc">Shared pool access + analytics</span>
+        </div>
+        <div class="price-row">
+          <span class="price-tier">Enterprise</span>
+          <span class="price-amount">Custom</span>
+          <span class="price-desc">Chains, staffing agencies, API</span>
+        </div>
+      </div>
+      <p class="pricing-alt">Or: €5 per covered shift. Pay only for results.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-split">
+        <div class="contact-left">
+          <p class="label">Pilot program</p>
+          <h2>Looking for 5 Amsterdam restaurants</h2>
+          <p class="contact-desc">Free 2-month pilot. We need restaurants with 20-50 staff who struggle with finding coverage.</p>
+
+          <div class="looking-list">
+            <div class="looking-item">
+              <span class="looking-title">Restaurant owners</span>
+              <span class="looking-sub">20-50 staff, Amsterdam or Berlin</span>
+            </div>
+            <div class="looking-item">
+              <span class="looking-title">Industry partners</span>
+              <span class="looking-sub">Hospitality contacts, local networks</span>
+            </div>
+            <div class="looking-item">
+              <span class="looking-title">Co-founders</span>
+              <span class="looking-sub">Sales/ops background in hospitality</span>
+            </div>
+          </div>
+
+          <p class="contact-email">hello@neurocaller.com</p>
+        </div>
+        <div class="contact-right">
+          <form id="lead-form" class="form">
+            <div class="form-field">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
+              <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-group">
+            <div class="form-field">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="you@restaurant.com">
+              <input type="email" id="email" name="email" required>
             </div>
-            <div class="form-group">
+            <div class="form-field">
               <label for="company">Restaurant / Company</label>
-              <input type="text" id="company" name="company" placeholder="e.g. Blue Kitchen Amsterdam">
+              <input type="text" id="company" name="company">
             </div>
-            <div class="form-group">
-              <label for="note">How can we help?</label>
-              <textarea id="note" name="note" rows="3" placeholder="Tell us about your staffing challenges..."></textarea>
+            <div class="form-field">
+              <label for="note">Message</label>
+              <textarea id="note" name="note" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn-submit" data-track="form-submit">
-              Request Access
-            </button>
+            <button type="submit" class="form-submit">Request access</button>
             <p class="form-status" id="form-status"></p>
           </form>
         </div>
@@ -337,18 +248,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">NeuroCaller</div>
-        <div class="footer-links">
-          <a href="#how-it-works">How It Works</a>
-          <a href="#demo">Demo</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-author">
-          Built by Dmitry Ivanov · Montenegro
-        </div>
+      <div class="footer-inner">
+        <span class="footer-logo">NeuroCaller</span>
+        <span class="footer-copy">Dmitry Ivanov / Montenegro / 2026</span>
+        <span class="footer-legal">EU-first, GDPR compliant</span>
       </div>
-      <p class="footer-copy">© 2026 NeuroCaller. EU-first, GDPR compliant.</p>
     </div>
   </footer>
 
