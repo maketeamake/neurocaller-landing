@@ -63,8 +63,8 @@ if (form) {
 
     const formData = {
       name: form.name.value.trim(),
-      phone: form.phone.value.trim(),
-      city: form.city.value.trim(),
+      email: form.email.value.trim(),
+      company: form.company.value.trim(),
       note: form.note.value.trim()
     };
 

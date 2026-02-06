@@ -15,15 +15,15 @@ app.get('/health', (req, res) => {
 
 // Lead submission endpoint
 app.post('/api/lead', async (req, res) => {
-  const { name, phone, city, note } = req.body;
+  const { name, email, company, note } = req.body;
 
   // Validate required fields
-  if (!name || !phone) {
-    return res.status(400).json({ ok: false, error: 'Name and phone are required' });
+  if (!name || !email) {
+    return res.status(400).json({ ok: false, error: 'Name and email are required' });
   }
 
   const timestamp = new Date().toISOString();
-  console.log(`[LEAD] ${timestamp} - Name: ${name}, Phone: ${phone}, City: ${city || 'N/A'}`);
+  console.log(`[LEAD] ${timestamp} - Name: ${name}, Email: ${email}, Company: ${company || 'N/A'}`);
 
   // Send to Telegram if configured
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -31,12 +31,12 @@ app.post('/api/lead', async (req, res) => {
 
   if (botToken && chatId) {
     const text = [
-      '🔔 New Lead!',
+      '🔔 New Partner Lead!',
       `━━━━━━━━━━━━━━`,
       `👤 Name: ${name}`,
-      `📞 Phone: ${phone}`,
-      `🏙️ City: ${city || 'Not specified'}`,
-      `📝 Note: ${note || 'None'}`,
+      `📧 Email: ${email}`,
+      `🏢 Company: ${company || 'Not specified'}`,
+      `📝 Message: ${note || 'None'}`,
       `━━━━━━━━━━━━━━`,
       `🕐 ${timestamp}`
     ].join('\n');

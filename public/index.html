@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroCaller — AI-Powered Staff Calling for Restaurants</title>
-  <meta name="description" content="Cover restaurant shifts in under 10 minutes with AI-powered calling. Looking for a co-founder in Amsterdam or Berlin.">
+  <title>NeuroCaller — AI Shift Coverage for Restaurants</title>
+  <meta name="description" content="When staff calls in sick, we call everyone else — automatically. Looking for partners in Netherlands and Germany.">
   <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NeuroCaller — AI Shift Coverage for Restaurants">
+  <meta property="og:description" content="When staff calls in sick, we call everyone else — automatically.">
+  <meta property="og:type" content="website">
+
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <style>
-    :root {
-      --font-display: 'Playfair Display', Georgia, serif;
-    }
-  </style>
 </head>
 <body>
-  <!-- Background Elements -->
   <div class="bg-grid"></div>
 
   <!-- Hero Section -->
@@ -29,21 +29,21 @@
       <div class="hero-content">
         <div class="hero-badge animate-in">
           <span class="hero-badge-dot"></span>
-          Working POC · Ready for pilots
+          Working POC · Looking for partners
         </div>
         <h1 class="animate-in delay-1">
-          AI calls your staff to cover shifts in
-          <span class="gradient-text">under 10 minutes</span>
+          AI Shift Coverage<br>
+          <span class="gradient-text">for Restaurants</span>
         </h1>
         <p class="hero-subtitle animate-in delay-2">
-          Stop wasting 45 minutes calling employees one by one. Let AI handle it while you run your restaurant.
+          When staff calls in sick, we call everyone else — automatically.
         </p>
         <div class="btn-group animate-in delay-3">
-          <a href="tel:+31600000000" class="btn btn-primary" data-track="hero-call">
-            <span class="btn-icon">📞</span> Let's Talk
+          <a href="#demo" class="btn btn-primary" data-track="hero-demo">
+            Watch Demo
           </a>
-          <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="hero-whatsapp" target="_blank" rel="noopener">
-            <span class="btn-icon">💬</span> WhatsApp
+          <a href="#partner" class="btn btn-secondary" data-track="hero-partner">
+            Partner With Us
           </a>
         </div>
       </div>
@@ -53,12 +53,26 @@
   <!-- Problem Section -->
   <section class="problem">
     <div class="container">
-      <div class="problem-card" data-animate>
-        <div class="problem-stat">45</div>
-        <div class="problem-stat-label">minutes wasted</div>
-        <p class="problem-desc">
-          That's how long restaurant managers spend calling staff when someone calls in sick. WhatsApp messages get ignored. Shifts go uncovered. Revenue is lost.
-        </p>
+      <div class="section-header" data-animate>
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">Restaurant managers waste hours every week</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card" data-animate>
+          <div class="problem-icon">⏱️</div>
+          <h3>45 minutes wasted</h3>
+          <p>Calling staff one by one when someone's sick</p>
+        </div>
+        <div class="problem-card" data-animate>
+          <div class="problem-icon">📱</div>
+          <h3>WhatsApp ignored</h3>
+          <p>Group messages get lost in the noise</p>
+        </div>
+        <div class="problem-card" data-animate>
+          <div class="problem-icon">📉</div>
+          <h3>Revenue lost</h3>
+          <p>Understaffed shift = bad reviews = less customers</p>
+        </div>
       </div>
     </div>
   </section>
@@ -68,29 +82,35 @@
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-label">How It Works</span>
-        <h2 class="section-title">From panic to covered in 3 steps</h2>
-        <p class="section-desc">Simple, fast, and fully automated</p>
+        <h2 class="section-title">From panic to covered in 10 minutes</h2>
       </div>
       <div class="steps-container">
         <div class="step-card" data-animate>
           <div class="step-number">1</div>
           <span class="step-icon">📱</span>
           <h3>Trigger</h3>
-          <p>Manager sends a shift request through the app</p>
+          <p>Manager sends request via WhatsApp or dashboard</p>
           <span class="step-time">30 seconds</span>
         </div>
         <div class="step-card" data-animate>
           <div class="step-number">2</div>
           <span class="step-icon">🤖</span>
           <h3>AI Calls</h3>
-          <p>System automatically calls available staff members</p>
-          <span class="step-time">5-10 minutes</span>
+          <p>System calls available staff with natural voice</p>
+          <span class="step-time">&lt;1.5s latency</span>
         </div>
         <div class="step-card" data-animate>
           <div class="step-number">3</div>
+          <span class="step-icon">👥</span>
+          <h3>Pool Collected</h3>
+          <p>Available workers added to the pool</p>
+          <span class="step-time">5-10 min</span>
+        </div>
+        <div class="step-card" data-animate>
+          <div class="step-number">4</div>
           <span class="step-icon">✅</span>
           <h3>Confirmed</h3>
-          <p>Shift is covered, manager gets notified instantly</p>
+          <p>Shift covered, manager notified instantly</p>
           <span class="step-time">Done</span>
         </div>
       </div>
@@ -98,15 +118,15 @@
   </section>
 
   <!-- Demo Section -->
-  <section class="demo">
+  <section class="demo" id="demo">
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-label">See It In Action</span>
         <h2 class="section-title">Watch how it works</h2>
+        <p class="section-desc">Real AI call demo — natural conversation in under 90 seconds</p>
       </div>
       <div class="video-container" data-animate>
         <div class="video-wrapper">
-          <!-- Replace VIDEO_ID with your actual YouTube/Loom video ID -->
           <iframe
             src="https://www.youtube.com/embed/VIDEO_ID"
             title="NeuroCaller Demo"
@@ -120,49 +140,105 @@
     </div>
   </section>
 
-  <!-- Co-Founder Section -->
-  <section class="cofounder">
+  <!-- Why Now Section -->
+  <section class="why-now">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Why Now</span>
+        <h2 class="section-title">The perfect storm</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-animate>
+          <div class="why-stat">123</div>
+          <div class="why-stat-label">vacancies per 100 unemployed</div>
+          <p>Netherlands hospitality has the worst staff shortage in Europe</p>
+        </div>
+        <div class="why-card" data-animate>
+          <div class="why-icon">🎙️</div>
+          <h3>AI voice finally ready</h3>
+          <p>Natural conversation quality with &lt;1.5 second latency</p>
+        </div>
+        <div class="why-card" data-animate>
+          <div class="why-icon">🎯</div>
+          <h3>No competition</h3>
+          <p>Zero AI shift coverage solutions exist for restaurants</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Business Model</span>
+        <h2 class="section-title">Simple SaaS pricing</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-animate>
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">€99<span>/mo</span></div>
+          <p class="pricing-desc">Single location, &lt;20 staff</p>
+          <ul class="pricing-features">
+            <li>50 calls/month</li>
+            <li>Own staff only</li>
+            <li>WhatsApp trigger</li>
+          </ul>
+        </div>
+        <div class="pricing-card featured" data-animate>
+          <div class="pricing-badge">Popular</div>
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-price">€199<span>/mo</span></div>
+          <p class="pricing-desc">20-50 staff + pool access</p>
+          <ul class="pricing-features">
+            <li>200 calls/month</li>
+            <li>Shared candidate pool</li>
+            <li>Dashboard + analytics</li>
+          </ul>
+        </div>
+        <div class="pricing-card" data-animate>
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <p class="pricing-desc">Chains, staffing agencies</p>
+          <ul class="pricing-features">
+            <li>Unlimited calls</li>
+            <li>API integration</li>
+            <li>Priority support + SLA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Section -->
+  <section class="partner" id="partner">
     <div class="container">
       <div class="section-header" data-animate>
         <span class="section-label">Partnership</span>
-        <h2 class="section-title">Looking for a co-founder</h2>
+        <h2 class="section-title">Looking for partners</h2>
         <p class="section-desc">Join me to bring AI-powered shift management to restaurants across Europe</p>
       </div>
-      <div class="cofounder-grid">
-        <div class="cofounder-card" data-animate>
-          <div class="cofounder-icon">📍</div>
-          <div>
-            <h3>Location</h3>
-            <p>Amsterdam or Berlin based</p>
-          </div>
+      <div class="partner-grid">
+        <div class="partner-card" data-animate>
+          <div class="partner-icon">🤝</div>
+          <h3>Go-to-Market Partners</h3>
+          <p>Restaurant industry contacts in Netherlands or Germany</p>
         </div>
-        <div class="cofounder-card" data-animate>
-          <div class="cofounder-icon">🎯</div>
-          <div>
-            <h3>Focus</h3>
-            <p>Sales, outbound, pilots, early revenue</p>
-          </div>
+        <div class="partner-card" data-animate>
+          <div class="partner-icon">📍</div>
+          <h3>Operational Partners</h3>
+          <p>Local presence in Amsterdam, Berlin, or other EU cities</p>
         </div>
-        <div class="cofounder-card" data-animate>
-          <div class="cofounder-icon">💼</div>
-          <div>
-            <h3>Background</h3>
-            <p>B2B sales, hospitality or HR experience</p>
-          </div>
-        </div>
-        <div class="cofounder-card" data-animate>
-          <div class="cofounder-icon">⚖️</div>
-          <div>
-            <h3>Equity</h3>
-            <p>50/50 split — equal partners</p>
-          </div>
+        <div class="partner-card" data-animate>
+          <div class="partner-icon">🚀</div>
+          <h3>Co-founders</h3>
+          <p>Hospitality network + sales experience</p>
         </div>
       </div>
-      <div class="section-header" style="margin-top: 2rem; margin-bottom: 0;">
-        <div class="status-badge" data-animate>
-          <span class="hero-badge-dot"></span>
-          Working POC · Ready for pilots
-        </div>
+      <div class="partner-cta" data-animate>
+        <a href="https://calendly.com/YOUR_LINK" class="btn btn-primary btn-lg" data-track="cta-calendly" target="_blank" rel="noopener">
+          Let's Talk →
+        </a>
       </div>
     </div>
   </section>
@@ -172,14 +248,16 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info" data-animate>
-          <h3>Let's build this together</h3>
-          <p>Whether you're interested in partnering or just want to learn more, I'd love to hear from you.</p>
-          <div class="contact-buttons">
-            <a href="tel:+31600000000" class="btn btn-primary" data-track="contact-call">
-              <span class="btn-icon">📞</span> Call Now
+          <h3>Get in touch</h3>
+          <p>Interested in partnering or learning more? I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="mailto:hello@neurocaller.com" class="contact-link">
+              <span class="contact-link-icon">✉️</span>
+              hello@neurocaller.com
             </a>
-            <a href="https://wa.me/31600000000" class="btn btn-whatsapp" data-track="contact-whatsapp" target="_blank" rel="noopener">
-              <span class="btn-icon">💬</span> WhatsApp
+            <a href="https://linkedin.com/in/YOUR_PROFILE" class="contact-link" target="_blank" rel="noopener">
+              <span class="contact-link-icon">💼</span>
+              LinkedIn
             </a>
           </div>
         </div>
@@ -191,16 +269,16 @@
               <input type="text" id="name" name="name" required placeholder="Your name">
             </div>
             <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required placeholder="+31 6 1234 5678">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
             </div>
             <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" placeholder="Amsterdam, Berlin...">
+              <label for="company">Company / Role</label>
+              <input type="text" id="company" name="company" placeholder="e.g. Restaurant owner, Sales">
             </div>
             <div class="form-group">
               <label for="note">Message</label>
-              <textarea id="note" name="note" rows="3" placeholder="Tell me about yourself..."></textarea>
+              <textarea id="note" name="note" rows="3" placeholder="How can we work together?"></textarea>
             </div>
             <button type="submit" class="btn-submit" data-track="form-submit">
               Send Message
@@ -215,12 +293,18 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">NeuroCaller</div>
-      <div class="footer-links">
-        <a href="mailto:hello@neurocaller.com">hello@neurocaller.com</a>
-        <a href="#contact">Contact</a>
+      <div class="footer-content">
+        <div class="footer-logo">NeuroCaller</div>
+        <div class="footer-links">
+          <a href="#demo">Demo</a>
+          <a href="#partner">Partner</a>
+          <a href="mailto:hello@neurocaller.com">Contact</a>
+        </div>
+        <div class="footer-author">
+          Built by Dmitry Ivanov · Montenegro
+        </div>
       </div>
-      <p class="footer-copy">© 2025 NeuroCaller. Your data is kept private.</p>
+      <p class="footer-copy">© 2026 NeuroCaller. EU-first, GDPR compliant.</p>
     </div>
   </footer>
 
