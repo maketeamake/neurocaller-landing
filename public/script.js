@@ -149,15 +149,15 @@ if (form) {
       const result = await response.json();
 
       if (result.ok) {
-        statusEl.textContent = "Thanks! We'll be in touch within 24 hours.";
+        statusEl.textContent = "Спасибо! Мы свяжемся с вами в течение 24 часов.";
         statusEl.className = 'form-status success';
         form.reset();
         trackEvent('form_success', { name: formData.name });
       } else {
-        throw new Error(result.error || 'Something went wrong');
+        throw new Error(result.error || 'Что-то пошло не так');
       }
     } catch (error) {
-      statusEl.textContent = error.message || 'Failed to send. Please email us directly.';
+      statusEl.textContent = error.message || 'Не удалось отправить. Напишите нам напрямую.';
       statusEl.className = 'form-status error';
       trackEvent('form_error', { error: error.message });
     } finally {
